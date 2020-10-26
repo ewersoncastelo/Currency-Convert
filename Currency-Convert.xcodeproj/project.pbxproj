@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90BBB77025450D830044ED5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BBB76F25450D830044ED5A /* AppDelegate.swift */; };
+		90BBB77225450D830044ED5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BBB77125450D830044ED5A /* SceneDelegate.swift */; };
+		90BBB77425450D830044ED5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BBB77325450D830044ED5A /* ViewController.swift */; };
+		90BBB77725450D830044ED5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90BBB77525450D830044ED5A /* Main.storyboard */; };
+		90BBB77925450D840044ED5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90BBB77825450D840044ED5A /* Assets.xcassets */; };
+		90BBB77C25450D840044ED5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90BBB77A25450D840044ED5A /* LaunchScreen.storyboard */; };
+		B8DBB404B57EE285DF03B13E /* Pods_Currency_Convert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE3868558E9437B69C1F616C /* Pods_Currency_Convert.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		90BBB76C25450D830044ED5A /* Currency-Convert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Currency-Convert.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90BBB76F25450D830044ED5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		90BBB77125450D830044ED5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		90BBB77325450D830044ED5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		90BBB77625450D830044ED5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		90BBB77825450D840044ED5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		90BBB77B25450D840044ED5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		90BBB77D25450D840044ED5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEC7BE11DDAAD9C23924FB27 /* Pods-Currency-Convert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currency-Convert.debug.xcconfig"; path = "Target Support Files/Pods-Currency-Convert/Pods-Currency-Convert.debug.xcconfig"; sourceTree = "<group>"; };
+		D11BAB5B4A8975DB11935C55 /* Pods-Currency-Convert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currency-Convert.release.xcconfig"; path = "Target Support Files/Pods-Currency-Convert/Pods-Currency-Convert.release.xcconfig"; sourceTree = "<group>"; };
+		FE3868558E9437B69C1F616C /* Pods_Currency_Convert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Currency_Convert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90BBB76925450D830044ED5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8DBB404B57EE285DF03B13E /* Pods_Currency_Convert.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D85552D0A945C3CE4891513 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE3868558E9437B69C1F616C /* Pods_Currency_Convert.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90BBB76325450D830044ED5A = {
+			isa = PBXGroup;
+			children = (
+				90BBB76E25450D830044ED5A /* Currency-Convert */,
+				90BBB76D25450D830044ED5A /* Products */,
+				F6DF40C49A36DB7EC7875AEF /* Pods */,
+				2D85552D0A945C3CE4891513 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		90BBB76D25450D830044ED5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90BBB76C25450D830044ED5A /* Currency-Convert.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90BBB76E25450D830044ED5A /* Currency-Convert */ = {
+			isa = PBXGroup;
+			children = (
+				90BBB76F25450D830044ED5A /* AppDelegate.swift */,
+				90BBB77125450D830044ED5A /* SceneDelegate.swift */,
+				90BBB77325450D830044ED5A /* ViewController.swift */,
+				90BBB77525450D830044ED5A /* Main.storyboard */,
+				90BBB77825450D840044ED5A /* Assets.xcassets */,
+				90BBB77A25450D840044ED5A /* LaunchScreen.storyboard */,
+				90BBB77D25450D840044ED5A /* Info.plist */,
+			);
+			path = "Currency-Convert";
+			sourceTree = "<group>";
+		};
+		F6DF40C49A36DB7EC7875AEF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BEC7BE11DDAAD9C23924FB27 /* Pods-Currency-Convert.debug.xcconfig */,
+				D11BAB5B4A8975DB11935C55 /* Pods-Currency-Convert.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90BBB76B25450D830044ED5A /* Currency-Convert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90BBB78025450D840044ED5A /* Build configuration list for PBXNativeTarget "Currency-Convert" */;
+			buildPhases = (
+				57401C8AF4399D3CB7870700 /* [CP] Check Pods Manifest.lock */,
+				90BBB76825450D830044ED5A /* Sources */,
+				90BBB76925450D830044ED5A /* Frameworks */,
+				90BBB76A25450D830044ED5A /* Resources */,
+				42F27640C9D32B873C4E561E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Currency-Convert";
+			productName = "Currency-Convert";
+			productReference = 90BBB76C25450D830044ED5A /* Currency-Convert.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90BBB76425450D830044ED5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "ewerson castelo";
+				TargetAttributes = {
+					90BBB76B25450D830044ED5A = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 90BBB76725450D830044ED5A /* Build configuration list for PBXProject "Currency-Convert" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 90BBB76325450D830044ED5A;
+			productRefGroup = 90BBB76D25450D830044ED5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90BBB76B25450D830044ED5A /* Currency-Convert */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90BBB76A25450D830044ED5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90BBB77C25450D840044ED5A /* LaunchScreen.storyboard in Resources */,
+				90BBB77925450D840044ED5A /* Assets.xcassets in Resources */,
+				90BBB77725450D830044ED5A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42F27640C9D32B873C4E561E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Currency-Convert/Pods-Currency-Convert-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Currency-Convert/Pods-Currency-Convert-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Currency-Convert/Pods-Currency-Convert-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57401C8AF4399D3CB7870700 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Currency-Convert-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90BBB76825450D830044ED5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90BBB77425450D830044ED5A /* ViewController.swift in Sources */,
+				90BBB77025450D830044ED5A /* AppDelegate.swift in Sources */,
+				90BBB77225450D830044ED5A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		90BBB77525450D830044ED5A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90BBB77625450D830044ED5A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		90BBB77A25450D840044ED5A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90BBB77B25450D840044ED5A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		90BBB77E25450D840044ED5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		90BBB77F25450D840044ED5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90BBB78125450D840044ED5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEC7BE11DDAAD9C23924FB27 /* Pods-Currency-Convert.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4TP5KVW8P3;
+				INFOPLIST_FILE = "Currency-Convert/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.ewersoncastelo.Currency-Convert";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		90BBB78225450D840044ED5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D11BAB5B4A8975DB11935C55 /* Pods-Currency-Convert.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4TP5KVW8P3;
+				INFOPLIST_FILE = "Currency-Convert/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.ewersoncastelo.Currency-Convert";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90BBB76725450D830044ED5A /* Build configuration list for PBXProject "Currency-Convert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90BBB77E25450D840044ED5A /* Debug */,
+				90BBB77F25450D840044ED5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90BBB78025450D840044ED5A /* Build configuration list for PBXNativeTarget "Currency-Convert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90BBB78125450D840044ED5A /* Debug */,
+				90BBB78225450D840044ED5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90BBB76425450D830044ED5A /* Project object */;
+}
