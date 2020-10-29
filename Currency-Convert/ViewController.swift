@@ -95,10 +95,29 @@ class ViewController: UIViewController {
                 guard let dataOption = data else { return }
                 if data != nil {
                     do {
-                        let jsonResponse = try JSONSerialization.jsonObject(with: dataOption, options: .mutableContainers)
+                        let jsonResponse = try JSONSerialization.jsonObject(with: dataOption, options: .mutableContainers) as! Dictionary<String, Any>
                         
                         DispatchQueue.main.async {
-                            print(jsonResponse)
+                            if let rates = jsonResponse["rates"] as? [String: Any]{
+                                guard let cad = rates["CAD"] else { return }
+                                self.currencyOne.text = "CAD: \(cad)"
+                                
+                                if let chf = rates["CHF"] as? Double {
+                                    self.currencyTwo.text = "CHF: \(chf)"
+                                }
+                                
+                                if let gbp = rates["GBP"] as? Double {
+                                    self.currencyThree.text = "GBP: \(gbp)"
+                                }
+                                
+                                if let jpy = rates["JPY"] as? Double {
+                                    self.currencyFour.text = "PJY: \(jpy)"
+                                }
+                                
+                                if let usd = rates["USD"] as? Double {
+                                    self.currencyFive.text = "USD: \(usd)"
+                                }
+                            }
                         }
                         
                     } catch {
