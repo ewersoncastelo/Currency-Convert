@@ -77,6 +77,39 @@ class ViewController: UIViewController {
     // MARK:- Functions
     @objc func handleGetApi(){
         print("Trying get api value...")
+        
+        // 1
+        let urlString = "http://data.fixer.io/api/latest?access_key=6437aa51e602470d12ee17f4bce567c3"
+        guard let url = URL(string: urlString) else { return }
+        
+        let session = URLSession.shared
+        
+        // 2
+        let task = session.dataTask(with: url) { (data, response, error) in
+            if error != nil {
+                let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                let okButtom = UIAlertAction(title: "OK", style: .default, handler: nil)
+                alert.addAction(okButtom)
+                self.present(alert, animated: true, completion: nil)
+            } else {
+                guard let dataOption = data else { return }
+                if data != nil {
+                    do {
+                        let jsonResponse = try JSONSerialization.jsonObject(with: dataOption, options: .mutableContainers)
+                        
+                        DispatchQueue.main.async {
+                            print(jsonResponse)
+                        }
+                        
+                    } catch {
+                        print("Some error in thejg")
+                    }
+                }
+            }
+        }
+        
+        task.resume()
+        
     }
     
     // MARK:- Setup Layout
