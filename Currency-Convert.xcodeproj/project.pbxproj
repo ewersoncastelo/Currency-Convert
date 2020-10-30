@@ -10,7 +10,7 @@
 		9058FF64254B98C600FA4C6D /* GetCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9058FF63254B98C600FA4C6D /* GetCurrency.swift */; };
 		9058FF6A254B9ADE00FA4C6D /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9058FF69254B9ADE00FA4C6D /* CurrencyModel.swift */; };
 		9058FF85254B9C8A00FA4C6D /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9058FF7C254B9C8A00FA4C6D /* Data.framework */; };
-		9058FF8A254B9C8A00FA4C6D /* DataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9058FF89254B9C8A00FA4C6D /* DataTests.swift */; };
+		9058FF8A254B9C8A00FA4C6D /* RemoteGetCurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9058FF89254B9C8A00FA4C6D /* RemoteGetCurrencyTests.swift */; };
 		9058FF9B254B9CB900FA4C6D /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9058FF57254B97AC00FA4C6D /* Domain.framework */; };
 		9058FF9C254B9CB900FA4C6D /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9058FF57254B97AC00FA4C6D /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		90BBB77025450D830044ED5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BBB76F25450D830044ED5A /* AppDelegate.swift */; };
@@ -61,7 +61,7 @@
 		9058FF7C254B9C8A00FA4C6D /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9058FF7F254B9C8A00FA4C6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9058FF84254B9C8A00FA4C6D /* DataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9058FF89254B9C8A00FA4C6D /* DataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTests.swift; sourceTree = "<group>"; };
+		9058FF89254B9C8A00FA4C6D /* RemoteGetCurrencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteGetCurrencyTests.swift; sourceTree = "<group>"; };
 		9058FF8B254B9C8A00FA4C6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90BBB76C25450D830044ED5A /* Currency-Convert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Currency-Convert.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90BBB76F25450D830044ED5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 		9058FF88254B9C8A00FA4C6D /* DataTests */ = {
 			isa = PBXGroup;
 			children = (
-				9058FF89254B9C8A00FA4C6D /* DataTests.swift */,
+				9058FF89254B9C8A00FA4C6D /* RemoteGetCurrencyTests.swift */,
 				9058FF8B254B9C8A00FA4C6D /* Info.plist */,
 			);
 			path = DataTests;
@@ -431,7 +431,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9058FF8A254B9C8A00FA4C6D /* DataTests.swift in Sources */,
+				9058FF8A254B9C8A00FA4C6D /* RemoteGetCurrencyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
