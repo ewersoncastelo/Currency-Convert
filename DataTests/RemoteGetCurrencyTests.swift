@@ -37,8 +37,10 @@ class RemoteGetCurrencyTests: XCTestCase {
         let sut = RemoteGetCurrency(url: url, httpClient: httpClientSpy)
         sut.get()
     }
-    
-    // MARK: - Case Use: Create a mockup class for protocol
+}
+
+// MARK: - Case Use: Create a mockup class for protocol
+extension RemoteGetCurrencyTests {
     class HttpClientSpy: HttpGetClient {
         var url: URL?
         
@@ -46,5 +48,4 @@ class RemoteGetCurrencyTests: XCTestCase {
             self.url =  url
         }
     }
-
 }
