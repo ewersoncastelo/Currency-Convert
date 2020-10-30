@@ -8,11 +8,11 @@
 
 import Foundation
 
-protocol GetCurrency {
+public protocol GetCurrency {
     func get(getCurrencyValue: GetCurrencyModel, completion: (Result<CurrencyModel, Error>) -> Void)
 }
 
-struct GetCurrencyModel {
-    var countryName: String
-    var currency: Any
+public struct GetCurrencyModel {
+    public var countryName: String
+    public var currency: Any
 }

@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct CurrencyModel {
-    var id: String
-    var countryName: String
-    var currency: Any
+public struct CurrencyModel {
+    public var id: String
+    public var countryName: String
+    public var currency: Any
 }
