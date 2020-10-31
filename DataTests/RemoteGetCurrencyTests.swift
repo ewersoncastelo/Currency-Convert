@@ -35,22 +35,17 @@ class RemoteGetCurrencyTests: XCTestCase {
     // MARK: - Case Use: Test GetCurrency
     func test_Check_URL() throws {
         let url = URL(string: "https://api-test.com")!
-        let httpClientSpy = HttpClientSpy()
-        let sut = RemoteGetCurrency(url: url, httpClient: httpClientSpy)
-        let getCurrencyModel = makeGetCurrencyModel()
-        sut.get(getCurrency: getCurrencyModel)
-        // check if url received for the client is equal to url get in the test
+        let (sut, httpClientSpy) = makeSut(url: url)
+        sut.get(getCurrency: makeGetCurrencyModel())
         XCTAssertEqual(httpClientSpy.url, url)
     }
     
     // MARK: - Case Use: Test GetCurrency
     func test_Check_DATA() throws {
-        let httpClientSpy = HttpClientSpy()
-        let sut = RemoteGetCurrency(url: URL(string: "https://api-test.com")!, httpClient: httpClientSpy)
+        let (sut, httpClientSpy) = makeSut()
         let getCurrencyModel = makeGetCurrencyModel()
         sut.get(getCurrency: getCurrencyModel)
         let data = try? JSONEncoder().encode(getCurrencyModel)
-        // check if url received for the client is equal to url get in the test
         XCTAssertEqual(httpClientSpy.data, data)
     }
 }
@@ -59,6 +54,12 @@ class RemoteGetCurrencyTests: XCTestCase {
 extension RemoteGetCurrencyTests {
     
     // MARK: - Design Pattern: Factory
+    func makeSut(url: URL = URL(string: "https://api-test.com")!) -> (sut: RemoteGetCurrency, httpClientSpy: HttpClientSpy) {
+        let httpClientSpy = HttpClientSpy()
+        let sut = RemoteGetCurrency(url: url, httpClient: httpClientSpy)
+        return (sut, httpClientSpy)
+    }
+    
     func makeGetCurrencyModel() -> GetCurrencyModel {
         GetCurrencyModel(countryName: "CAD", currency: 1.34049)
     }
