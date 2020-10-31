@@ -33,7 +33,7 @@ protocol HttpGetClient {
 class RemoteGetCurrencyTests: XCTestCase {
 
     // MARK: - Case Use: Test GetCurrency
-    func test_Check_URL_For_GetCurrency() throws {
+    func test_Check_URL() throws {
         let url = URL(string: "https://api-test.com")!
         let httpClientSpy = HttpClientSpy()
         let sut = RemoteGetCurrency(url: url, httpClient: httpClientSpy)
@@ -44,7 +44,7 @@ class RemoteGetCurrencyTests: XCTestCase {
     }
     
     // MARK: - Case Use: Test GetCurrency
-    func test_Check_DATA_For_GetCurrency() throws {
+    func test_Check_DATA() throws {
         let httpClientSpy = HttpClientSpy()
         let sut = RemoteGetCurrency(url: URL(string: "https://api-test.com")!, httpClient: httpClientSpy)
         let getCurrencyModel = GetCurrencyModel(countryName: "CAD", currency: 1.34049)
