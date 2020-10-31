@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		903AEC5F254DB3DE00F436B9 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9058FF57254B97AC00FA4C6D /* Domain.framework */; };
+		903AEC60254DB3DE00F436B9 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9058FF57254B97AC00FA4C6D /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9058FF64254B98C600FA4C6D /* GetCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9058FF63254B98C600FA4C6D /* GetCurrency.swift */; };
 		9058FF6A254B9ADE00FA4C6D /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9058FF69254B9ADE00FA4C6D /* CurrencyModel.swift */; };
 		9058FF85254B9C8A00FA4C6D /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9058FF7C254B9C8A00FA4C6D /* Data.framework */; };
 		9058FF8A254B9C8A00FA4C6D /* RemoteGetCurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9058FF89254B9C8A00FA4C6D /* RemoteGetCurrencyTests.swift */; };
-		9058FF9B254B9CB900FA4C6D /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9058FF57254B97AC00FA4C6D /* Domain.framework */; };
-		9058FF9C254B9CB900FA4C6D /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9058FF57254B97AC00FA4C6D /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		90BBB77025450D830044ED5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BBB76F25450D830044ED5A /* AppDelegate.swift */; };
 		90BBB77225450D830044ED5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BBB77125450D830044ED5A /* SceneDelegate.swift */; };
 		90BBB77425450D830044ED5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BBB77325450D830044ED5A /* ViewController.swift */; };
@@ -23,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		903AEC61254DB3DE00F436B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90BBB76425450D830044ED5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9058FF56254B97AC00FA4C6D;
+			remoteInfo = Domain;
+		};
 		9058FF86254B9C8A00FA4C6D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 90BBB76425450D830044ED5A /* Project object */;
@@ -30,23 +37,16 @@
 			remoteGlobalIDString = 9058FF7B254B9C8A00FA4C6D;
 			remoteInfo = Data;
 		};
-		9058FF9D254B9CB900FA4C6D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 90BBB76425450D830044ED5A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9058FF56254B97AC00FA4C6D;
-			remoteInfo = Domain;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9058FF9F254B9CB900FA4C6D /* Embed Frameworks */ = {
+		903AEC63254DB3DE00F436B9 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9058FF9C254B9CB900FA4C6D /* Domain.framework in Embed Frameworks */,
+				903AEC60254DB3DE00F436B9 /* Domain.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9058FF9B254B9CB900FA4C6D /* Domain.framework in Frameworks */,
+				903AEC5F254DB3DE00F436B9 /* Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,12 +239,12 @@
 				9058FF78254B9C8A00FA4C6D /* Sources */,
 				9058FF79254B9C8A00FA4C6D /* Frameworks */,
 				9058FF7A254B9C8A00FA4C6D /* Resources */,
-				9058FF9F254B9CB900FA4C6D /* Embed Frameworks */,
+				903AEC63254DB3DE00F436B9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9058FF9E254B9CB900FA4C6D /* PBXTargetDependency */,
+				903AEC62254DB3DE00F436B9 /* PBXTargetDependency */,
 			);
 			name = Data;
 			productName = Data;
@@ -448,15 +448,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		903AEC62254DB3DE00F436B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9058FF56254B97AC00FA4C6D /* Domain */;
+			targetProxy = 903AEC61254DB3DE00F436B9 /* PBXContainerItemProxy */;
+		};
 		9058FF87254B9C8A00FA4C6D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9058FF7B254B9C8A00FA4C6D /* Data */;
 			targetProxy = 9058FF86254B9C8A00FA4C6D /* PBXContainerItemProxy */;
-		};
-		9058FF9E254B9CB900FA4C6D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9058FF56254B97AC00FA4C6D /* Domain */;
-			targetProxy = 9058FF9D254B9CB900FA4C6D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

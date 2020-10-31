@@ -9,10 +9,15 @@
 import Foundation
 
 public protocol GetCurrency {
-    func get(getCurrencyValue: GetCurrencyModel, completion: (Result<CurrencyModel, Error>) -> Void)
+    func get(getCurrency: GetCurrencyModel, completion: @escaping (Result<CurrencyModel, Error>) -> Void)
 }
 
-public struct GetCurrencyModel {
-    public var countryName: String
-    public var currency: Any
+public struct GetCurrencyModel: Encodable {
+    var countryName: String
+    var currency: Double
+    
+    public init(countryName: String, currency: Double){
+        self.countryName = countryName
+        self.currency = currency
+    }
 }

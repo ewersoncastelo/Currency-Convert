@@ -11,5 +11,5 @@ import Foundation
 public struct CurrencyModel {
     public var id: String
     public var countryName: String
-    public var currency: Any
+    public var currency: Double
 }
