@@ -18,6 +18,7 @@ class RemoteGetCurrencyTests: XCTestCase {
         let (sut, httpClientSpy) = makeSut(url: url)
         sut.get(getCurrency: makeGetCurrencyModel())
         XCTAssertEqual(httpClientSpy.url, url)
+        XCTAssertEqual(httpClientSpy.urlsCalls, 1)
     }
     
     // MARK: - Case Use: Test GetCurrency
@@ -46,10 +47,12 @@ extension RemoteGetCurrencyTests {
     class HttpClientSpy: HttpGetClient {
         var url: URL?
         var data: Data?
+        var urlsCalls = 0
         
         func get(to url: URL, with data: Data?) {
             self.url =  url
             self.data = data
+            self.urlsCalls += 1
         }
     }
 }
