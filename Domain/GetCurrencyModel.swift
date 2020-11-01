@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct GetCurrencyModel: Encodable {
+public struct GetCurrencyModel: Model {
     var countryName: String
     var currency: Double
     

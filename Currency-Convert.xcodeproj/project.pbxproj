@@ -13,6 +13,9 @@
 		9058FF6A254B9ADE00FA4C6D /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9058FF69254B9ADE00FA4C6D /* CurrencyModel.swift */; };
 		9058FF85254B9C8A00FA4C6D /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9058FF7C254B9C8A00FA4C6D /* Data.framework */; };
 		9058FF8A254B9C8A00FA4C6D /* RemoteGetCurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9058FF89254B9C8A00FA4C6D /* RemoteGetCurrencyTests.swift */; };
+		905A616B254E55A700ADDD19 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905A616A254E55A700ADDD19 /* Model.swift */; };
+		905A6170254E566D00ADDD19 /* RemoteGetCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905A616F254E566D00ADDD19 /* RemoteGetCurrency.swift */; };
+		905A6175254E56ED00ADDD19 /* HttpGetClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905A6174254E56ED00ADDD19 /* HttpGetClient.swift */; };
 		90BBB77025450D830044ED5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BBB76F25450D830044ED5A /* AppDelegate.swift */; };
 		90BBB77225450D830044ED5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BBB77125450D830044ED5A /* SceneDelegate.swift */; };
 		90BBB77425450D830044ED5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BBB77325450D830044ED5A /* ViewController.swift */; };
@@ -64,6 +67,9 @@
 		9058FF84254B9C8A00FA4C6D /* DataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9058FF89254B9C8A00FA4C6D /* RemoteGetCurrencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteGetCurrencyTests.swift; sourceTree = "<group>"; };
 		9058FF8B254B9C8A00FA4C6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		905A616A254E55A700ADDD19 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		905A616F254E566D00ADDD19 /* RemoteGetCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteGetCurrency.swift; sourceTree = "<group>"; };
+		905A6174254E56ED00ADDD19 /* HttpGetClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpGetClient.swift; sourceTree = "<group>"; };
 		90BBB76C25450D830044ED5A /* Currency-Convert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Currency-Convert.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90BBB76F25450D830044ED5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90BBB77125450D830044ED5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +133,7 @@
 				9058FF63254B98C600FA4C6D /* GetCurrency.swift */,
 				90FE188E254DC43A00A340A1 /* GetCurrencyModel.swift */,
 				9058FF69254B9ADE00FA4C6D /* CurrencyModel.swift */,
+				905A616A254E55A700ADDD19 /* Model.swift */,
 				9058FF5A254B97AC00FA4C6D /* Info.plist */,
 			);
 			path = Domain;
@@ -135,6 +142,8 @@
 		9058FF7D254B9C8A00FA4C6D /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				905A616F254E566D00ADDD19 /* RemoteGetCurrency.swift */,
+				905A6174254E56ED00ADDD19 /* HttpGetClient.swift */,
 				9058FF7F254B9C8A00FA4C6D /* Info.plist */,
 			);
 			path = Data;
@@ -307,6 +316,7 @@
 					};
 					9058FF7B254B9C8A00FA4C6D = {
 						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
 					};
 					9058FF83254B9C8A00FA4C6D = {
 						CreatedOnToolsVersion = 12.1;
@@ -421,6 +431,7 @@
 				90FE188F254DC43A00A340A1 /* GetCurrencyModel.swift in Sources */,
 				9058FF64254B98C600FA4C6D /* GetCurrency.swift in Sources */,
 				9058FF6A254B9ADE00FA4C6D /* CurrencyModel.swift in Sources */,
+				905A616B254E55A700ADDD19 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +439,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				905A6170254E566D00ADDD19 /* RemoteGetCurrency.swift in Sources */,
+				905A6175254E56ED00ADDD19 /* HttpGetClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +561,7 @@
 		9058FF8E254B9C8A00FA4C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -568,6 +582,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -577,6 +592,7 @@
 		9058FF8F254B9C8A00FA4C6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -606,6 +622,7 @@
 		9058FF91254B9C8A00FA4C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4TP5KVW8P3;
@@ -626,6 +643,7 @@
 		9058FF92254B9C8A00FA4C6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4TP5KVW8P3;

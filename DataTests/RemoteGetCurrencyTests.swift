@@ -8,27 +8,7 @@
 
 import XCTest
 import Domain
-
-// MARK: - Case Use Domain: GetCurrency
-class RemoteGetCurrency {
-    private let url: URL
-    private let httpClient: HttpGetClient
-    
-    init(url: URL, httpClient: HttpGetClient) {
-        self.url = url
-        self.httpClient = httpClient
-    }
-    
-    func get(getCurrency: GetCurrencyModel) {
-        let data = try? JSONEncoder().encode(getCurrency)
-        httpClient.get(to: url, with: data)
-    }
-}
-
-// MARK: - Case Use Implement Protocol: RemoteGetCurrency
-protocol HttpGetClient {
-    func get(to url: URL, with data: Data?)
-}
+import Data
 
 class RemoteGetCurrencyTests: XCTestCase {
 
@@ -45,8 +25,7 @@ class RemoteGetCurrencyTests: XCTestCase {
         let (sut, httpClientSpy) = makeSut()
         let getCurrencyModel = makeGetCurrencyModel()
         sut.get(getCurrency: getCurrencyModel)
-        let data = try? JSONEncoder().encode(getCurrencyModel)
-        XCTAssertEqual(httpClientSpy.data, data)
+        XCTAssertEqual(httpClientSpy.data, getCurrencyModel.toData())
     }
 }
 
