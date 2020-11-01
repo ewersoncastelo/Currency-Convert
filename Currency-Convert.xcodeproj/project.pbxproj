@@ -130,10 +130,8 @@
 		9058FF58254B97AC00FA4C6D /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				9058FF63254B98C600FA4C6D /* GetCurrency.swift */,
-				90FE188E254DC43A00A340A1 /* GetCurrencyModel.swift */,
-				9058FF69254B9ADE00FA4C6D /* CurrencyModel.swift */,
-				905A616A254E55A700ADDD19 /* Model.swift */,
+				905A617E254E57FD00ADDD19 /* UseCases */,
+				905A6185254E580E00ADDD19 /* Models */,
 				9058FF5A254B97AC00FA4C6D /* Info.plist */,
 			);
 			path = Domain;
@@ -142,8 +140,8 @@
 		9058FF7D254B9C8A00FA4C6D /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				905A616F254E566D00ADDD19 /* RemoteGetCurrency.swift */,
-				905A6174254E56ED00ADDD19 /* HttpGetClient.swift */,
+				905A6189254E583200ADDD19 /* UseCases */,
+				905A618D254E583C00ADDD19 /* Http */,
 				9058FF7F254B9C8A00FA4C6D /* Info.plist */,
 			);
 			path = Data;
@@ -152,10 +150,52 @@
 		9058FF88254B9C8A00FA4C6D /* DataTests */ = {
 			isa = PBXGroup;
 			children = (
-				9058FF89254B9C8A00FA4C6D /* RemoteGetCurrencyTests.swift */,
+				905A6191254E585700ADDD19 /* UseCases */,
 				9058FF8B254B9C8A00FA4C6D /* Info.plist */,
 			);
 			path = DataTests;
+			sourceTree = "<group>";
+		};
+		905A617E254E57FD00ADDD19 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				9058FF63254B98C600FA4C6D /* GetCurrency.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		905A6185254E580E00ADDD19 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				90FE188E254DC43A00A340A1 /* GetCurrencyModel.swift */,
+				9058FF69254B9ADE00FA4C6D /* CurrencyModel.swift */,
+				905A616A254E55A700ADDD19 /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		905A6189254E583200ADDD19 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				905A616F254E566D00ADDD19 /* RemoteGetCurrency.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		905A618D254E583C00ADDD19 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				905A6174254E56ED00ADDD19 /* HttpGetClient.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		905A6191254E585700ADDD19 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				9058FF89254B9C8A00FA4C6D /* RemoteGetCurrencyTests.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 		90BBB76325450D830044ED5A = {
